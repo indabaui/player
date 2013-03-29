@@ -1,1 +1,1 @@
-module.exports = '';
+module.exports = '<div class="player">\n  <b>my awesome player</b><br>\n  <span class="sound-position"></span> / <span class="sound-duration"></span>\n</div>\n';

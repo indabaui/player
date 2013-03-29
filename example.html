@@ -10,7 +10,11 @@
     <script>
       var Player = require('player');
       var player = new Player();
-      document.body.appendChild(player.el);
+      player.el.appendTo('body');
+
+      soundManager.onready(function() {
+        player.play('https://cloudup-files.s3.amazonaws.com/1355244692571.845b8dfc324b7bd3c548e8c06380908e');
+      });
     </script>
   </body>
 </html>

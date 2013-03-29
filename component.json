@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "stereosteve/SoundManager2": "*"
+    "stereosteve/SoundManager2": "*",
+    "component/jquery": "*"
   },
   "development": {},
   "license": "MIT",
