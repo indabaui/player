@@ -3,14 +3,16 @@
 
   audio player
 
-## Installation
+to run:
 
-    $ component install stereosteve/player
+```
+make
+npm install serve -g
+serve
+```
 
-## API
+* visit: http://localhost:3000/example.html
+* console says: `soundManager: Flash URL required. Call soundManager.setup({url:...}) to get started.`
+* onready never gets called, sound does not play.
 
-   
 
-## License
-
-  MIT

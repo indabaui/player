@@ -4,7 +4,9 @@
   "description": "audio player",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "uniba/sound-manager-2": "*"
+  },
   "development": {},
   "license": "MIT",
   "scripts": [
