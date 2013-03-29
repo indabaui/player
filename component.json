@@ -1,0 +1,17 @@
+{
+  "name": "player",
+  "repo": "stereosteve/player",
+  "description": "audio player",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "player.css"
+  ]
+}
