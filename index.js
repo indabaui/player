@@ -1,18 +1,16 @@
 
-var swfUrl = '/build/uniba-sound-manager-2/swf';
-var SoundManager = require('sound-manager-2');
-
 module.exports = Player;
 function Player() {
   this.el = document.createElement('div');
   this.el.textContent = 'el player';
   this.el.classList.add('player');
 
+  var url = "https://cloudup-files.s3.amazonaws.com/1355244692571.845b8dfc324b7bd3c548e8c06380908e";
 
-  var sm2 = new SoundManager();
 
+  var sm2 = soundManager;
   sm2.setup({
-    url: swfUrl,
+    url: '/sm2',
     debugMode: false,
     flashVersion: 9,
     onready: function() {
@@ -24,5 +22,5 @@ function Player() {
       });
     }
   })
-  console.log(sm2.setupOptions);
+  console.log(sm2.setupOptions, 'dagg');
 }
