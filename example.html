@@ -22,8 +22,7 @@
       var player = new Player();
       player.el.appendTo('body');
 
-      SC.stream('/tracks/64256091', function(sound, two) {
-        console.log(sound, two);
+      SC.stream('/tracks/64256091', function(sound) {
         player.play(sound);
       });
     </script>

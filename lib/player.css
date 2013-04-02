@@ -1,5 +1,13 @@
 .player {
+  font: 14px Helvetica;
 }
+.player.playing {
+}
+.player.paused {
+  opacity: 0.6;
+}
+
+
 .player .progress-bar {
   position: relative;
   background: #ccc;
@@ -19,3 +27,17 @@
   height: 100%;
   background: cyan;
 }
+
+
+.player .toggle-pause-button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  background: whitesmoke;
+  text-align: center;
+  cursor: pointer;
+}
+.player .sound-position {
+  float: right;
+}
+
