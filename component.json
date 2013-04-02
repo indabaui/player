@@ -12,9 +12,10 @@
   "license": "MIT",
   "scripts": [
     "index.js",
-    "template.js"
+    "lib/player.js",
+    "lib/template.js"
   ],
   "styles": [
-    "player.css"
+    "lib/player.css"
   ]
 }
