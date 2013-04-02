@@ -5,10 +5,11 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "stereosteve/SoundManager2": "*",
     "component/jquery": "*"
   },
-  "development": {},
+  "development": {
+    "stereosteve/SoundManager2": "*"
+  },
   "license": "MIT",
   "scripts": [
     "index.js",

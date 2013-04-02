@@ -7,13 +7,24 @@
   <body>
     <h1>Player</h1>
     <script src="build/build.js"></script>
+
     <script>
+    </script>
+
+
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script>
+      SC.initialize({
+        client_id: "7f09329a8bcd8e96385d23d9f576e7f9",
+      });
+
       var Player = require('player');
       var player = new Player();
       player.el.appendTo('body');
 
-      soundManager.onready(function() {
-        player.play('https://cloudup-files.s3.amazonaws.com/1355244692571.845b8dfc324b7bd3c548e8c06380908e');
+      SC.stream('/tracks/64256091', function(sound, two) {
+        console.log(sound, two);
+        player.play(sound);
       });
     </script>
   </body>
