@@ -1,5 +1,21 @@
 .player {
-  background: green;
-  color: white;
-  padding: 10px;
+}
+.player .progress-bar {
+  position: relative;
+  background: #ccc;
+  height: 100px;
+}
+.player .load-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: whitesmoke;
+}
+.player .play-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: cyan;
 }
