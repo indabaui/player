@@ -10,7 +10,7 @@
 
 .player .progress-bar {
   position: relative;
-  background: #ccc;
+  background: #555;
   height: 100px;
 }
 .player .load-progress {
@@ -18,14 +18,14 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: whitesmoke;
+  background: #000;
 }
 .player .play-progress {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: cyan;
+  background: magenta;
 }
 
 

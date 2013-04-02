@@ -22,6 +22,15 @@
       var player = new Player();
       player.el.appendTo('body');
 
+      SC.get('/tracks/64256091', function(track) {
+        var img = document.createElement('img');
+        img.src = track.waveform_url;
+        img.style.position = "relative";
+        img.style.width = "100%";
+        img.style.height = "100%";
+        img.style.zIndex = "2";
+        player.el.find('.progress-bar').append(img);
+      });
       SC.stream('/tracks/64256091', function(sound) {
         player.play(sound);
       });
