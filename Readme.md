@@ -1,7 +1,13 @@
 
 # player
 
-  audio player
+![player](https://raw.github.com/stereosteve/player/master/example.png)
+
+  Audio player UI.
+
+  * Works with SoundManager2 sounds
+  * Playback progress bar
+  * Supports seek
 
 to run:
 
