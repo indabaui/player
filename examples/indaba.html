@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Player - Indaba</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/build/build.css" type="text/css">
+  </head>
+  <body>
+    <h1>Player</h1>
+    <script src="/build/build.js"></script>
+
+    <script>
+      var agent = require('indabaui-agent');
+      require('indabaui-SoundManager2');
+      soundManager.setup({
+        url: '/build/indabaui-SoundManager2/swf',
+        debugMode: false,
+      });
+
+      agent.get('mmsound.json', function(resp) {
+        var mmSound = resp.body;
+        soundManager.onready(function() {
+          var sound = soundManager.createSound({
+            id: mmSound.id,
+            url: s3url(mmSound.info.preview_upload)
+          });
+          var Player = require('player');
+          var player = new Player();
+          document.body.appendChild(player.el[0]);
+          player.play(sound);
+
+          player.indabaStyle();
+          player.setWaveformUrl(s3url(mmSound.info.waveform_upload));
+        });
+      });
+
+      // put in MmSound model
+      function s3url(item) {
+        if (!item.bucket || !item.url) {
+          throw new Error("bucket and url are required");
+        }
+        return '//s3.amazonaws.com/' + item.bucket + '/' + item.url;
+      }
+
+    </script>
+
+
+  </body>
+</html>

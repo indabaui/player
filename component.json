@@ -8,7 +8,8 @@
     "component/jquery": "*"
   },
   "development": {
-    "stereosteve/SoundManager2": "*"
+    "indabaui/agent": "*",
+    "indabaui/SoundManager2": "*"
   },
   "license": "MIT",
   "scripts": [

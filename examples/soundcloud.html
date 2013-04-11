@@ -1,12 +1,13 @@
+<!doctype html>
 <html>
   <head>
     <title>Player</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="build/build.css" type="text/css">
+    <link rel="stylesheet" href="/build/build.css" type="text/css">
   </head>
   <body>
     <h1>Player</h1>
-    <script src="build/build.js"></script>
+    <script src="/build/build.js"></script>
 
     <script>
     </script>
@@ -23,13 +24,8 @@
       player.el.appendTo('body');
 
       SC.get('/tracks/64256091', function(track) {
-        var img = document.createElement('img');
-        img.src = track.waveform_url;
-        img.style.position = "relative";
-        img.style.width = "100%";
-        img.style.height = "100%";
-        img.style.zIndex = "2";
-        player.el.find('.progress-bar').append(img);
+        player.soundcloudStyle();
+        player.setWaveformUrl(track.waveform_url);
       });
       SC.stream('/tracks/64256091', function(sound) {
         player.play(sound);

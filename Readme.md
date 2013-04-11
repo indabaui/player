@@ -1,7 +1,18 @@
 
 # player
 
-![player](https://raw.github.com/stereosteve/player/master/example.png)
+**Indaba**
+
+![player](https://raw.github.com/indabaui/player/master/screenshots/indaba.png)
+
+**SoundCloud**
+
+![player](https://raw.github.com/indabaui/player/master/screenshots/soundcloud.png)
+
+**Default**
+
+![player](https://raw.github.com/indabaui/player/master/screenshots/plain.png)
+
 
   Audio player UI.
 
@@ -15,5 +26,6 @@ to run:
 make
 npm install serve -g
 serve
-open http://localhost:3000/example.html
+open http://localhost:3000/examples/indaba.html
+open http://localhost:3000/examples/soundcloud.html
 ```
