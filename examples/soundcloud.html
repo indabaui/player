@@ -19,16 +19,15 @@
         client_id: "7f09329a8bcd8e96385d23d9f576e7f9",
       });
 
-      var Player = require('player');
-      var player = new Player();
-      player.el.appendTo('body');
-
       SC.get('/tracks/64256091', function(track) {
-        player.soundcloudStyle();
-        player.setWaveformUrl(track.waveform_url);
-      });
-      SC.stream('/tracks/64256091', function(sound) {
-        player.play(sound);
+        SC.stream('/tracks/64256091', function(sound) {
+          var Player = require('player');
+          var player = new Player(sound);
+          player.el.appendTo('body');
+          player.play();
+          player.soundcloudStyle();
+          player.setWaveformUrl(track.waveform_url);
+        });
       });
     </script>
   </body>

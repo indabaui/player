@@ -25,9 +25,9 @@
             url: s3url(mmSound.info.preview_upload)
           });
           var Player = require('player');
-          var player = new Player();
+          var player = new Player(sound);
           document.body.appendChild(player.el[0]);
-          player.play(sound);
+          player.play();
 
           player.indabaStyle();
           player.setWaveformUrl(s3url(mmSound.info.waveform_upload));
