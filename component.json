@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
+    "indabaui/format-ms": "*",
     "component/jquery": "*"
   },
   "development": {
