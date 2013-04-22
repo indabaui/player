@@ -66,8 +66,7 @@
   right: 0;
 }
 .indaba-player .load-progress {
-  background: #333;
-  box-shadow: inset 0 0 24px black;
+  background: #111;
 }
 .indaba-player .play-progress {
   background: transparent;
