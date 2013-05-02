@@ -6,7 +6,8 @@
   "keywords": [],
   "dependencies": {
     "indabaui/format-ms": "*",
-    "component/jquery": "*"
+    "component/jquery": "*",
+    "component/emitter": "*"
   },
   "development": {
     "indabaui/agent": "*",
